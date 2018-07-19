@@ -566,15 +566,6 @@ a
 
 /* Register */
 
-body
-{
-  background-image: url('../img/reception.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-blend-mode: lighten; 
-}
-
 .boilerform
 {
   margin-top: 250px;
