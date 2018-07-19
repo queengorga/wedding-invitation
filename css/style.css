@@ -1,0 +1,685 @@
+*
+{
+  margin: 0;
+}
+
+header
+{
+  z-index: 5000;
+  position: fixed;
+  top: 0;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.main-nav
+{
+  overflow: hidden;
+  background-color: #a2bc8a;
+  position: fixed;
+  top: 0;
+  width:100%;
+}
+
+.main-nav li
+{
+  display: inline;
+}
+
+.main-nav li a
+{
+  color: #fffff8;
+  display: inline-flex;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 40px;
+  margin: 40px;
+}
+
+.main-nav li a:hover
+{
+  border: 2px solid white;
+  background-color:	#ded391;
+  color: black;
+  border-radius: 5px;
+  padding: 15px 40px;
+}
+
+.main-nav li.active a
+{
+  border: 2px solid white;
+  background-color: #ded391;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 15px 40px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.main-nav li.active a:hover
+{
+  background-color: #a2bc8a;
+  color: white;
+  border-color: white;
+  border-radius: 5px;
+}
+
+/* HOME */
+
+.container
+{
+  background-image:url('../img/image1.jpg');
+  height: 130vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.centered
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered h2
+{
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.centered h1
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.centered h3
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container .btn a 
+{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #a2bc8a;
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.container .btn a:hover 
+{
+  background-color: #ded391;
+  color: black;
+}
+
+/* Our Story */
+
+.title-header h1
+{
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  font-weight: lighter;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 130px;
+  text-align: center;
+}
+
+.row, .title-header  
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url('../img/ourstory.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row,
+.row > .column {
+  padding: 8px 8px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column
+{
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px; 
+  margin-bottom: 20px;
+}
+
+.column img
+{
+  width: 750px;
+  height: 350px;
+  border-radius: 5%;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.column img:hover
+{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.content p
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+/* The Wedding */
+
+.title
+{
+  margin-top: 200px;
+  margin-bottom: 0;
+}
+
+.title h1
+{
+  color: black;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+.main
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('../img/wedding.jpg');
+  height: 135vh;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat
+  position: relative; 
+}
+
+.main .button-reg
+{
+  position: absolute;
+  margin-top: 300px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ded391;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.main .button-reg:hover 
+{
+  background-color: #a2bc8a;
+  color: white; 
+}
+
+.text-block
+{
+  position: absolute;
+  margin-top: 150px; 
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 0.75;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 4%;
+  -webkit-border-radius: 4%;
+  -moz-border-radius: 4%;
+  -ms-border-radius: 4%;
+  -o-border-radius: 4%;
+  padding: 50px 150px 50px 150px;  
+}
+
+.text-block h1
+{
+  margin-top: 20px; 
+  color: black;
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  text-align: center; 
+}
+
+.text-block h2
+{
+  margin-top: 40px; 
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px; 
+  font-weight: bold; 
+  text-align: center;
+}
+
+.text-block h3
+{
+  margin-top: 30px; 
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px; 
+  text-align: center;
+}
+
+/* PARTY */
+
+.container-entourage
+{
+  margin-top: 130px; 
+  padding-top: 50px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url('../img/entourage.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: 1fr; 
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.column-above 
+{   
+  display: inline-grid;
+  margin-top: 80px;
+  width: 25%;
+  height: 850%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 80px;
+}
+
+.column-below 
+{   
+  display: inline-grid;
+  margin-top: 80px;
+  width: 25%;
+  height: 850%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 80px; 
+  margin-bottom:100px;
+}
+
+@media screen and (max-width: 650px) 
+{
+    .column-above {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card 
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ded391;
+}
+
+.card img
+{
+    border-radius: 25% 50% 25% 50%;
+    -webkit-border-radius: 25% 50% 25% 50%;
+    -moz-border-radius: 25% 50% 25% 50%;
+    -ms-border-radius: 25% 50% 25% 50%;
+    -o-border-radius: 25% 50% 25% 50%;
+}
+
+.container-card 
+{
+    padding: 0 16px;
+}
+
+.container-card h2
+{
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  font-weight: light;
+}
+
+.container-card p
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-card::after, .row-entourage::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.bmaids h1
+{
+  font-variant-position: super; 
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  font-weight: lighter;
+  text-align: center;
+  color: white; 
+}
+
+.gmen h1
+{
+  margin-top: 80px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+}
+
+.button 
+{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #a2bc8a;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.button:hover 
+{
+    background-color: white;
+    color: black;
+}
+
+/* DETAILS */
+
+#details 
+{ 
+  margin-top: 50px;
+  height: 175vh;
+  background-color: 	#fff4c8; 
+  justify-content: center;
+}
+
+.details-block h1
+{
+  margin-top: 100px;
+  text-align: center; 
+  padding-top: 100px;
+  background-color: #fff4c8;  
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+.details-block h2
+{
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif; 
+  text-align: center;
+  font-size: 30px;
+}
+
+.details-block h3
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; 
+  text-align: center;
+}
+
+.btn-d 
+{
+  position: absolute;
+  margin-top: 170px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a2bc8a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.btn-d:hover 
+{
+  background-color: #ded391;
+  color: black;
+}
+
+.divider img
+{
+  margin-top: 80px;
+  margin-left: 450px; 
+  align-items: center; 
+  height: 200px; 
+  width: 600px; 
+}
+
+.registry h1
+{
+  margin-top: 20px; 
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.registry li
+{
+  display: inline;
+  align-content: center;
+}
+
+.registry img
+{
+  height: 125px; 
+  width: 350px; 
+  margin-top: 40px; 
+  margin-left: 80px; 
+  margin-bottom: 40px;
+}
+
+/* Register */
+
+body
+{
+  background-image: url('../img/reception.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten; 
+}
+
+.boilerform
+{
+  margin-top: 250px;
+  height: 60vh;
+  margin-bottom: 100px;
+}
+
+.o-heading 
+{
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 5px 0;
+  margin: 40px auto 20px auto;
+  max-width: 500px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 75px;
+  font-weight: lighter;
+  color: black;
+  text-align: center;
+}
+
+label
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+input 
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.c-signup 
+{
+  min-width: 350px;
+  max-width: 550px;
+  height: 120px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.c-signup__field > input[type] 
+{
+  width: 100%;
+  height: 30px; 
+}
+
+.c-select-field__menu
+{
+  width: 100%;
+  height: 35px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.c-signup__field--fill 
+{
+  grid-column: span 2;
+}
+
+.c-button
+{
+  position: absolute;
+  margin-top: 80px;
+  width: 36%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a2bc8a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.c-button:hover
+{
+  background-color: #ded391;
+  color: black;
+}
+
+footer
+{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  background-color: #a2bc8a;
+  height: 60px;
+  text-align: center;
+  padding: 0;
+}
