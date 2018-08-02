@@ -568,10 +568,10 @@ a
 
 .container-rsvp
 {
-  margin-top: 100px;
+  margin-top: 80px;
   padding-top: 40px;
   background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url('../img/reception.jpg');
-  height: 100vh;
+  height: 135vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -597,6 +597,23 @@ a
   text-align: center;
 }
 
+.rsvp-heading
+{
+  display: block;
+  width: 50%;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 15px 0;
+  margin: 5px auto 5px auto;
+  margin-top: 40px;
+  max-width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
 label
 {
   font-family: 'Montserrat', sans-serif;
@@ -617,7 +634,7 @@ input
 {
   min-width: 350px;
   max-width: 550px;
-  height: 120px;
+  height: 110px;
   margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -630,10 +647,31 @@ input
   height: 30px; 
 }
 
+.c-select-field__attend
+{
+  width: 100%;
+  height: 35px; 
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.c-select-field__guest
+{
+  width: 100%;
+  height: 35px; 
+  margin-top: 15x;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .c-select-field__menu
 {
   width: 100%;
   height: 35px; 
+  margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -644,16 +682,21 @@ input
   grid-column: span 2;
 }
 
+::placeholder 
+{
+  color: lightgrey;
+}
+
 .c-button
 {
   position: absolute;
-  margin-top: 130px;
+  margin-top: 375px;
   width: 36%;
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #a2bc8a;
-  color: white;
+  background-color:  #ded391;
+  color: black;
   font-size: 16px;
   font-weight: bold;
   padding: 12px 30px;
@@ -668,8 +711,41 @@ input
 
 .c-button:hover
 {
-  background-color: #ded391;
-  color: black;
+  background-color:  #a2bc8a;
+  color: white;
+}
+
+
+.container-thanks
+{
+  margin-top: 80px;
+  padding-top: 40px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url('../img/reception.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.centered-thanks h1
+{
+  font-family: 'Great Vibes', cursive;
+  font-size: 150px;
+  margin-top: 200px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.centered-thanks h2
+{
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  margin-top: 80px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
 }
 
 footer

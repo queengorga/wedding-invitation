@@ -24,24 +24,39 @@
 <div class="form-body">
 <form class="boilerform" action="" method="post">
   <h1 class="o-heading">Add Your Details</h1>
+  <h3 class="rsvp-heading">Kindly RSVP before September 10, 2038</h3>
   <div class="c-signup">
     <div class="c-signup__field">
       <label for="first_name" class="c-label">First name</label>
-      <input type="text" name="first_name" id="first_name" class="c-input-field" />
+      <input type="text" name="first_name" id="first_name" class="c-input-field" placeholder="Enter First Name"/>
     </div>
     <div class="c-signup__field">
       <label for="last_name" class="c-label">Last name</label>
-      <input type="text" name="last_name" id="last_name" class="c-input-field" />
+      <input type="text" name="last_name" id="last_name" class="c-input-field" placeholder="Enter Last Name"/>
     </div>
     <div class="c-signup__field c-signup__field--fill">
       <label for="email" class="c-label">Email address</label>
-      <input type="email" name="email" id="email" class="c-input-field" />
+      <input type="email" name="email" id="email" class="c-input-field" placeholder="Enter email"/>
     </div>
-    
+  <div class="c-signup__field c-signup__field--fill">
+    <label class="c-label" for="guest_attend">Are you attending?</label>
+    <div class="c-select-field">
+      <select name="guest_attend" id="attendance" class="c-select-field__attend">
+        <option>Please select an option</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <span class="c-select-field__decor" aria-hidden="true" role="presentation"></span>
+    </div>
+  </div>
+  <div class="c-signup__field c-signup__field--fill">
+    <label for="guest_plusOne" class="c-label">Who else is coming with you?</label>
+    <input type="text" name="guest_name" id="plusOne_name" class="c-input-field_guest" placeholder="Enter Name" />
+  </div>
     <div class="c-signup__field c-signup__field--fill">
-      <label class="c-label" for="fav_color">Kindly select a menu of your choice?</label>
+      <label class="c-label" for="guest_menu">Please select a menu of your choice</label>
       <div class="c-select-field">
-        <select name="fav_color" id="fav_color" class="c-select-field__menu">
+        <select name="guest_menu" id="menu" class="c-select-field__menu">
           <option>Please select an option</option>
           <option value="Red">Filet Mignon</option>
           <option value="Orange">Coq Au Vin</option>
@@ -54,7 +69,7 @@
       </div>
     </div>
     <div class="c-signup__button">
-      <button class="c-button" type="submit">Register</button>
+      <button class="c-button" onclick="location.href='thankyou.html'" type="button">Register</button>
     </div>
   </div>
 </form>
