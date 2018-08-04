@@ -37,10 +37,10 @@ function allLetter(fname) {
     }
 }
 
-function attendselect(ucountry) {
-    if (ucountry.value == "Default") {
+function attendselect(gattend) {
+    if (gattend.value == "Default") {
         alert('Select your country from the list');
-        ucountry.focus();
+        gattend.focus();
         return false;
     }
     else {
