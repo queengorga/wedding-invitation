@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat" rel="stylesheet">
+    <script src="rsvp.js"></script>
+
     <title>Paul and Linda's Wedding</title>
+    
+    </head>
+
 </head>
 <body>
   <header>
@@ -22,7 +27,7 @@
 
 <div class="container-rsvp">
 <div class="form-body">
-<form class="boilerform" action="" method="post">
+<form name="RegForm" class="boilerform" action="thankyou.html" onsubmit="return formValidation(this)" method="post">
   <h1 class="o-heading">Add Your Details</h1>
   <h3 class="rsvp-heading">Kindly RSVP before September 10, 2038</h3>
   <div class="c-signup">
@@ -69,7 +74,7 @@
       </div>
     </div>
     <div class="c-signup__button">
-      <button class="c-button" onclick="location.href='thankyou.html'" type="button">Register</button>
+      <button class="c-button" type="submit">Register</button>
     </div>
   </div>
 </form>
@@ -81,5 +86,7 @@
     <p>&copy2038 by Paul & Linda</p>
     <br>
   </footer>
+
+  <script type="text/javascript" src="rsvp.js"></script>
 </body>
 </html>

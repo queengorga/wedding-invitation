@@ -491,7 +491,7 @@ a
 
 .details-block h2
 {
-  margin-top: 50px;
+  margin-top: 70px;
   font-family: 'Montserrat', sans-serif; 
   text-align: center;
   font-size: 30px;
@@ -504,11 +504,36 @@ a
   text-align: center;
 }
 
-.btn-d 
+.button-accom 
+{
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  margin-bottom: 90px;
+  transform: translate(-50%, -50%);
+  background-color: #a2bc8a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.button-church 
 {
   position: absolute;
   margin-top: 170px;
-  top: 75%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #a2bc8a;
