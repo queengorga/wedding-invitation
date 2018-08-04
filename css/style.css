@@ -13,6 +13,7 @@ header
 a
 {
   text-decoration: none;
+  color: inherit;
 }
 
 .main-nav
@@ -529,6 +530,12 @@ a
   -o-border-radius: 5px;
 }
 
+.button-accom:hover
+{
+  background-color: #fffff8; 
+  color: darkgreen; 
+}
+
 .button-church 
 {
   position: absolute;
@@ -548,6 +555,12 @@ a
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+
+.button-church:hover
+{
+  background-color: #fffff8; 
+  color: darkgreen;
 }
 
 .btn-d:hover 
