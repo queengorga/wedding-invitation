@@ -78,7 +78,7 @@ a
 
 .container
 {
-  background-image:url('../img/image1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),url('../img/image1.jpg');
   height: 130vh;
   background-size: cover;
   background-position: center;
@@ -115,13 +115,13 @@ a
 .centered h3
 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   font-weight: bolder;
   text-align: center;
 }
 
-.container .btn a 
+.btn a 
 {
   position: absolute;
   top: 75%;
@@ -130,7 +130,9 @@ a
   -ms-transform: translate(-50%, -50%);
   background-color: #a2bc8a;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif; 
   padding: 12px 30px;
   border: none;
   cursor: pointer;
@@ -144,6 +146,7 @@ a
 {
   background-color: #ded391;
   color: black;
+  font-weight: bolder; 
 }
 
 /* Our Story */
@@ -241,7 +244,7 @@ a
   color: black;
   font-family: 'Great Vibes', cursive;
   text-align: center;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .main
@@ -251,8 +254,7 @@ a
   background-size: 100%;
   background-attachment: scroll;
   background-position: center;
-  background-repeat: no-repeat
-  position: relative; 
+  background-repeat: no-repeat;  
 }
 
 .main .button-reg
@@ -265,7 +267,8 @@ a
   background-color: #ded391;
   color: black;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
   padding: 12px 30px;
   border: none;
   cursor: pointer;
@@ -280,7 +283,7 @@ a
   -o-border-radius:;
 }
 
-.main .button-reg:hover 
+.button-reg:hover 
 {
   background-color: #a2bc8a;
   color: white; 
@@ -295,7 +298,7 @@ a
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  opacity: 0.75;
+  opacity: 0.70;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -323,7 +326,7 @@ a
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 40px; 
-  font-weight: bold; 
+  font-weight: bolder; 
   text-align: center;
 }
 
@@ -333,6 +336,7 @@ a
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px; 
+  font-weight: bolder; 
   text-align: center;
 }
 
@@ -532,7 +536,7 @@ a
 
 .button-accom:hover
 {
-  background-color: #fffff8; 
+  background-color: #ded391; 
   color: darkgreen; 
 }
 
@@ -559,7 +563,7 @@ a
 
 .button-church:hover
 {
-  background-color: #fffff8; 
+  background-color: #ded391; 
   color: darkgreen;
 }
 
