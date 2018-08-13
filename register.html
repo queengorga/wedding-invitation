@@ -27,26 +27,26 @@
 
 <div class="container-rsvp">
 <div class="form-body">
-<form name="RegForm" class="boilerform" action="thankyou.html" onsubmit="return formValidation(this)" method="post">
+<form name="RegForm" class="boilerform" action="thankyou.html" onsubmit="" method="post">
   <h1 class="o-heading">Add Your Details</h1>
   <h3 class="rsvp-heading">Kindly RSVP before September 10, 2038</h3>
   <div class="c-signup">
     <div class="c-signup__field">
       <label for="first_name" class="c-label">First name</label>
-      <input type="text" name="first_name" id="first_name" class="c-input-field" placeholder="Enter First Name"/>
+      <input type="text" required name="first_name" id="first_name" class="c-input-field" placeholder="Sherlock"/>
     </div>
     <div class="c-signup__field">
       <label for="last_name" class="c-label">Last name</label>
-      <input type="text" name="last_name" id="last_name" class="c-input-field" placeholder="Enter Last Name"/>
+      <input type="text" required name="last_name" id="last_name" class="c-input-field" placeholder="Holmes"/>
     </div>
     <div class="c-signup__field c-signup__field--fill">
       <label for="email" class="c-label">Email address</label>
-      <input type="email" name="email" id="email" class="c-input-field" placeholder="Enter email"/>
+      <input type="email" required name="email"pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" id="email" class="c-input-field" placeholder="sherlock.holmes@thescienceofdeduction.com">
     </div>
   <div class="c-signup__field c-signup__field--fill">
     <label class="c-label" for="guest_attend">Are you attending?</label>
     <div class="c-select-field">
-      <select name="guest_attend" id="attendance" class="c-select-field__attend">
+      <select name="guest_attend" required id="attendance" class="c-select-field__attend">
         <option>Please select an option</option>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
@@ -56,7 +56,7 @@
   </div>
   <div class="c-signup__field c-signup__field--fill">
     <label for="guest_plusOne" class="c-label">Who else is coming with you?</label>
-    <input type="text" name="guest_name" id="plusOne_name" class="c-input-field_guest" placeholder="Enter Name" />
+    <input type="text" name="guest_name" id="plusOne_name" class="c-input-field_guest" placeholder="John Watson" />
   </div>
     <div class="c-signup__field c-signup__field--fill">
       <label class="c-label" for="guest_menu">Please select a menu of your choice</label>
