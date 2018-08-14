@@ -798,3 +798,36 @@ footer
   text-align: center;
   padding: 0;
 }
+
+.social ul 
+{
+  margin-top: -55px;
+  margin-right: 20px;
+  float: right;
+}
+
+.social li 
+{
+  display: inline-flex;
+}
+
+.social li a {
+  text-decoration: none;
+}
+
+.social li a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social img {
+  margin-top: -10px;
+  height: 55px;
+  width: 55px;
+}
+
+.social img:hover {
+  cursor: pointer;
+  opacity: .55; 
+  cursor: pointer;
+}
